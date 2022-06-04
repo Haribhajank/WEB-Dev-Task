@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Amazon Lite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<style>
+body{margin-top:80px;
+background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?cs=srgb&dl=pexels-henry-%26-co-1939485.jpg&fm=jpg);
+}
+</style>
+<body>
+
+<div>
+<style>
+a.right-link {
+  color: #2da1c1;
+  font-size: small;
+  text-decoration: none;
+  float: right;
+}
+
+a.right-link:hover {
+  color: #f90;
+  text-decoration: underline;
+}
+
+</style>
+  <a class='right-link' href="https://stackoverflow.com/questions/69911699/noob-css-cant-make-link-go-to-top-right-corner">About Me</a>
+</div>
+
+<!--search button wala part-->
+
+<div align="center" class="search bar">
+<style> 
+
+form {
+        background-color: #4654e1;
+        width: 300px;
+        height: 44px;
+        border-radius: 5px;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+      }
+
+      input {
+        all: unset;
+        font: 16px system-ui;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+      }
+
+      ::placeholder {
+        color: #fff;
+        opacity: 0.7; 
+      }
+
+      svg {
+        color: #fff;
+        fill: currentColor;
+        width: 77px;
+        height: 77px;
+        padding: 20px;
+      }
+
+      button {
+        all: unset;
+        cursor: pointer;
+        width: 78px;
+        height: 78px;
+      }
+
+</style>
+
+<form role="search" id="form">
+      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+      <button>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+    </form>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google +'+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="container overflow-hidden">
+
+
+
+  <div class="row">
+    <div class="col">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" alt=""></a>
+         <div class="Description">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>iPhone 9</u></b></a></h4><h4>An apple mobile which is nothing like apple</h4><h4 align="center"><b>Price:549</b><h4><b><u>Discount:12.96%</u></b></h4><h4>Ratings:4.69</h4><h4>In Stock:94</h4>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/2/thumbnail.jpg" alt=""></a>
+         <div class="Description">
+		<h4 align="center" style="color:#9966ff"><a href="#"><b><u>iPhone X</u></b></a></h4><h4>SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...</h4><h4 align="center"><b>Price:899</b><h4><b><u>Discount:17.94%</u></b></h4><h4>Ratings:4.44</h4><h4>In Stock:34</h4>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/3/thumbnail.jpg" alt=""></a>
+         <div class="Description">
+		<h4 align="center" style="color:#9966ff"><a href="#"><b><u>Samsung Universe 9</u></b></a></h4><h4>Samsung's new variant which goes beyond Galaxy to the Universe</h4><h4 align="center"><b>Price:1249</b><h4><b><u>Discount:15.46%</u></b></h4><h4>Ratings:4.09</h4><h4>In Stock:36</h4>
+         </div>
+       </div>
+    </div>
+ </div>
+
+
+ 
+
+  <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px src="https://dummyjson.com/image/i/products/4/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>OPPOF19</u></b></a></h4><h4>OPPO F19 is officially announced on April 2021</h4><h4 align="center"><b>Price:280</b><h4><b><u>Discount:17.91%</u></b></h4><h4>Ratings4.3</h4><h4>In Stock:123</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px src="https://dummyjson.com/image/i/products/5/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Huawei P30</u></b></a></h4><h4>Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.</h4><h4 align="center"><b>Price:499</b><h4><b><u>Discount:10.58%</u></b></h4><h4>Ratings:4.09</h4><h4>In Stock:32</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/6/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>MacBook Pro</u></b></a></h4><h4>MacBook Pro 2021 with mini-LED display may launch between September, November</h4><h4 align="center"><b>Price:1749</b><h4><b><u>Discount:11.02%</u></b></h4><h4>Ratings:4.57</h4><h4>In Stock:83</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/7/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+		<h4 align="center" style="color:#9966ff"><a href="#"><b><u>Samsung Galaxy Book</u></b></a></h4><h4>Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched</h4><h4 align="center"><b>Price:1499</b><h4><b><u>Discount:4.15%</u></b></h4><h4>Ratings:4.25</h4><h4>In Stock:50</h4>
+           
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/8/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Microsoft Surface Laptop 4</u></b></a></h4><h4>Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.</h4><h4 align="center"><b>Price:1499</b><h4><b><u>Discount:10.23%</u></b></h4><h4>Ratings:4.43</h4><h4>In Stock:68</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/9/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Infinix INBOOK</u></b></a></h4><h4>Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty</h4><h4 align="center"><b>Price:1099</b><h4><b><u>Discount:11.83%</u></b></h4><h4>Ratings:4.54</h4><h4>In Stock:96</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+ 
+
+  <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/10/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>HP Pavilion 15-DK1056WM</u></b></a></h4><h4>HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10</h4><h4 align="center"><b>Price:1099</b><h4><b><u>Discount:6.18%</u></b></h4><h4>Ratings:4.43</h4><h4>In Stock:89</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/11/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>perfume Oil</u></b></a></h4><h4>Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil</h4><h4 align="center"><b>Price:13</b><h4><b><u>Discount:8.4%</u></b></h4><h4>Ratings:4.26</h4><h4>In Stock:65</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/12/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Brown Perfume</u></b></a></h4><h4>Royal_Mirage Sport Brown Perfume for Men & Women - 120ml</h4><h4 align="center"><b>Price:40</b><h4><b><u>Discount:15.66%</u></b></h4><h4>Ratings:4</h4><h4>In Stock:52</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/13/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Fog Scent Xpressio Perfume</u></b></a></h4><h4>Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men</h4><h4 align="center"><b>Price:13</b><h4><b><u>Discount:8.14%</u></b></h4><h4>Ratings:4.59</h4><h4>In Stock:61</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/14/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Non-Alcoholic Concentrated Perfume Oil</u></b></a></h4><h4>Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil</h4><h4 align="center"><b>Price:120</b><h4><b><u>Discount:15.6%</u></b></h4><h4>Ratings:4.21</h4><h4>In Stock:114</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/15/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Eau De Perfume Spray</u></b></a></h4><h4>Genuine Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality</h4><h4 align="center"><b>Price:30</b><h4><b><u>Discount:10.99%</u></b></h4><h4>Ratings:4.7</h4><h4>In Stock:105</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/16/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Hyaluronic Acid Serum</u></b></a></h4><h4>L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid</h4><h4 align="center"><b>Price:19</b><h4><b><u>Discount:13.31%</u></b></h4><h4>Ratings:4.83</h4><h4>In Stock:110</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/17/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Tree Oil 30ml</u></b></a></h4><h4>Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria</h4><h4 align="center"><b>Price:12</b><h4><b><u>Discount:4.09%</u></b></h4><h4>Ratings:4.52</h4><h4>In Stock:78</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/18/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Oil Free Moisturizer 100ml</u></b></a></h4><h4>Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.</h4><h4 align="center"><b>Price:40</b><h4><b><u>Discount:13.1%</u></b></h4><h4>Ratings:4.56</h4><h4>In Stock:88</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/19/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Skin Beauty Serum.</u></b></a></h4><h4>Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m</h4><h4 align="center"><b>Price:46</b><h4><b><u>Discount:10.68%</u></b></h4><h4>Ratings:4.42</h4><h4>In Stock:54</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/20/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Freckle Treatment Cream- 15gm</u></b></a></h4><h4>Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.</h4><h4 align="center"><b>Price:70</b><h4><b><u>Discount:16.99%</u></b></h4><h4>Ratings:4.06</h4><h4>In Stock:140</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/21/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>- Daal Masoor 500 grams</u></b></a></h4><h4>Fine quality Branded Product Keep in a cool and dry place</h4><h4 align="center"><b>Price:20</b><h4><b><u>Discount:4.81%</u></b></h4><h4>Ratings:4.44</h4><h4>In Stock:133</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/22/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Elbow Macaroni - 400 gm</u></b></a></h4><h4>Product details of Bake Parlor Big Elbow Macaroni - 400 gm</h4><h4 align="center"><b>Price:14</b><h4><b><u>Discount:15.58%</u></b></h4><h4>Ratings:4.57</h4><h4>In Stock:146</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/23/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Orange Essence Food Flavou</u></b></a></h4><h4>Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item</h4><h4 align="center"><b>Price:14</b><h4><b><u>Discount:8.04%</u></b></h4><h4>Ratings:4.85</h4><h4>In Stock:26</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/24/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>cereals muesli fruit nuts</u></b></a></h4><h4>original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji</h4><h4 align="center"><b>Price:46</b><h4><b><u>Discount:16.8%</u></b></h4><h4>Ratings:4.94</h4><h4>In Stock:113</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/25/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Gulab Powder 50 Gram</u></b></a></h4><h4>Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds</h4><h4 align="center"><b>Price:70</b><h4><b><u>Discount:13.58%</u></b></h4><h4>Ratings:4.87</h4><h4>In Stock:47</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/26/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Plant Hanger For Home</u></b></a></h4><h4>Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf</h4><h4 align="center"><b>Price:41</b><h4><b><u>Discount:17.86%</u></b></h4><h4>Ratings:4.08</h4><h4>In Stock131:</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/27/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><uFlying Wooden Bird></u></b></a></h4><h4>Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm</h4><h4 align="center"><b>Price:51</b><h4><b><u>Discount:15.58%</u></b></h4><h4>Ratings:4.41</h4><h4>In Stock:17</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+
+
+   <div class="row">
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/28/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>3D Embellishment Art Lamp</u></b></a></h4><h4>3D led lamp sticker Wall sticker 3d wall art light on/off button cell operated (included)</h4><h4 align="center"><b>Price:20</b><h4><b><u>Discount:16.49%</u></b></h4><h4>Ratings:4.82</h4><h4>In Stock:54</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/29/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Handcraft Chinese style</u></b></a></h4><h4>Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate</h4><h4 align="center"><b>Price:60</b><h4><b><u>Discount:15.34%</u></b></h4><h4>Ratings:4.44</h4><h4>In Stock:7</h4>
+             
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="PRODUCT"><a href="#"><img height="280px" width="350px" src="https://dummyjson.com/image/i/products/30/thumbnail.jpg" alt=""></a>
+         <div class="caption">
+           <h4 align="center" style="color:#9966ff"><a href="#"><b><u>Key Holder</u></b></a></h4><h4>Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality</h4><h4 align="center"><b>Price:30</b><h4><b><u>Discount:2.92%</u></b></h4><h4>Ratings:4.92</h4><h4>In Stock:54</h4>
+         </div>
+       </div>
+     </div>
+ </div>
+ 
+ 
+
+
+
+</div>
+
+</body>
+</html>
